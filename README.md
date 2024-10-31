@@ -20,7 +20,7 @@ will you play a part?
 
 Installation:
 - This is not currently hosted in the official Chrome Web Store.
-- To install, clone/download the repo or just download `extension.zip`
+- To install, clone/download the repo or just [download](https://github.com/mr-spaghetti-code/404-canvas/raw/refs/heads/main/extension.zip) `extension.zip`.
 - Optional: Select `manifest.json` and `background.js` and zip them.
 - You'll have to enable loading "unpacked" extensions. Follow the directions [here](https://knowledge.workspace.google.com/kb/load-unpacked-extensions-000005962)
 - Then go to "Extensions" on your Chromium browser (Chrome, Arc, Edge, etc.) and hit "Load Unpacked"
