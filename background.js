@@ -16,9 +16,59 @@ chrome.webNavigation.onCompleted.addListener(async (details) => {
       console.error('Error:', error);
     }
   });
-  
+
   // Function to modify the 404 page
   function modify404Page() {
+    let urlList = [
+      "https://i.imgur.com/oQNcZSt.gif",
+      "https://i.imgur.com/uteHtn8.gif",
+      "https://i.imgur.com/vSeETGL.gif",
+      "https://i.imgur.com/xFYEAyM.gif",
+      "https://i.imgur.com/ER62w16.gif",
+      "https://i.imgur.com/0CrQLU6.gif",
+      "https://i.imgur.com/ifbKyJT.gif",
+      "https://i.imgur.com/YeElCB5.gif",
+      "https://i.imgur.com/Ldh33gf.gif",
+      "https://i.imgur.com/Gcga7SF.gif",
+      "https://i.imgur.com/tzWCBtN.gif",
+      "https://i.imgur.com/q8ucqAQ.gif",
+      "https://i.imgur.com/WlW3kaq.gif",
+      "https://i.imgur.com/60n5D9n.gif",
+      "https://i.imgur.com/0sTZXQx.gif",
+      "https://i.imgur.com/G5ypjTL.gif",
+      "https://i.imgur.com/kYBZmiG.gif",
+      "https://i.imgur.com/a8k7zQT.gif",
+      "https://i.imgur.com/WK8qyTg.gif",
+      "https://i.imgur.com/EU5Bdfm.gif",
+      "https://i.imgur.com/4mKoZMy.gif",
+      "https://i.imgur.com/Mlg8PGh.gif",
+      "https://i.imgur.com/Jgf3X1r.gif",
+      "https://i.imgur.com/hZqCGN7.gif",
+      "https://i.imgur.com/INbgWRX.gif",
+      "https://i.imgur.com/kppkItA.gif",
+      "https://i.imgur.com/czNrMCD.gif",
+      "https://i.imgur.com/osZxWjt.gif",
+      "https://i.imgur.com/6v45DTx.gif",
+      "https://i.imgur.com/JqWBwhJ.gif",
+      "https://i.imgur.com/2vDe3Jw.gif",
+      "https://i.imgur.com/W8H9IbF.gif",
+      "https://i.imgur.com/4DsHTbj.gif",
+      "https://i.imgur.com/EuVyHMZ.gif",
+      "https://i.imgur.com/JZ4C99P.gif",
+      "https://i.imgur.com/CENq9zu.gif",
+      "https://i.imgur.com/pxsp9sK.gif",
+      "https://i.imgur.com/hJYm491.gif",
+      "https://i.imgur.com/Q9olBVG.gif",
+      "https://i.imgur.com/7pyNyoC.gif",
+      "https://i.imgur.com/n8z463y.gif",
+      "https://i.imgur.com/cpaVZp7.gif",
+      "https://i.imgur.com/nSK8lBd.gif",
+      "https://i.imgur.com/pvRAiTe.gif",
+      "https://i.imgur.com/GAtcv9W.gif",
+      "https://i.imgur.com/HN7oMJS.gif",
+      "https://i.imgur.com/OcPmQuC.gif",
+      "https://i.imgur.com/i5iBxQv.gif"
+    ];
     // Clear the existing content
     document.body.innerHTML = '';
     
@@ -42,7 +92,7 @@ chrome.webNavigation.onCompleted.addListener(async (details) => {
     // Create and style the GIF
     const gif = document.createElement('img');
     // Replace this URL with your IPFS GIF URL
-    gif.src = 'https://ipfs.io/ipfs/QmUsWYSK8ChhBSELACEisC5vNWpyfBwhfKkUr5hZsMhKW1/media';
+    gif.src = urlList[Math.floor(Math.random() * urlList.length)];
     gif.style.cssText = `
       max-width: 100%;
       max-height: 100%;

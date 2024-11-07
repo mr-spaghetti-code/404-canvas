@@ -1,0 +1,31 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 300px;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.twitter-share-button {
+  display: inline-block;
+  background-color: gray;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.twitter-share-button:hover {
+  background-color: darkgray;
+}
