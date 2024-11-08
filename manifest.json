@@ -1,12 +1,16 @@
 {
   "manifest_version": 3,
   "name": "Error Messages",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Detects 404 pages and turns them into a canvas.",
+  "chrome_url_overrides": {
+    "newtab": "new-tab.html"
+  },
   "permissions": [
     "webNavigation",
     "scripting",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
   "host_permissions": [
     "<all_urls>"
@@ -17,5 +21,6 @@
   },
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "options_page": "options.html"
 }
