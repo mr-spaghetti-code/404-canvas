@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     followBtn.addEventListener('click', function(event) {
       event.preventDefault();
-      const url = 'https://x.com/m0dest___';
+      const url = 'https://x.com/err0rmessages';
       chrome.tabs.create({ url });
     });
   });
